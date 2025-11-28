@@ -161,6 +161,10 @@ npm test
 - **Repository Pattern**: Data access abstraction
 - **Dependency Injection**: Constructor-based DI throughout
 
+## Loom Video
+
+- https://www.loom.com/share/a3a41dc6498e4fd5b85e1c799450857e
+
 ## License
 
 MIT
