@@ -16,8 +16,9 @@ A lightweight photo upload → processing → review workflow application built 
 ### Backend
 - **Framework**: Spring Boot 3.2.0
 - **Pattern**: Vertical Slices + CQRS
-- **Database**: H2 (in-memory for development)
+- **Database**: Mongo DB
 - **Java Version**: 17
+- **Unit Test**: JUnit 5
 
 ### Frontend
 - **Framework**: React 18 with TypeScript
@@ -75,12 +76,6 @@ mvn spring-boot:run
 ```
 
 The backend will start on `http://localhost:8080`
-
-3. Access H2 Console (optional):
-- URL: `http://localhost:8080/h2-console`
-- JDBC URL: `jdbc:h2:mem:rapidphotodb`
-- Username: `sa`
-- Password: (leave empty)
 
 ### Frontend Setup
 
@@ -142,7 +137,7 @@ npm test
 ### Backend
 - Spring Boot 3.2.0
 - Spring Data JPA
-- H2 Database
+- Mongo DB
 - Lombok
 - JUnit 5
 - Mockito
@@ -160,6 +155,7 @@ npm test
 - **CQRS**: Separate command and query handlers
 - **Repository Pattern**: Data access abstraction
 - **Dependency Injection**: Constructor-based DI throughout
+- **Clean Architecture**: Layered design (Web → Application → Domain → Infrastructure) for maintainability.
 
 ## Loom Video
 
