@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: rapid-photo-flow
+  
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rapidphotodb
+      database: rapidphotodb
+      auto-index-creation: true
+  
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 50MB
+  
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+logging:
+  level:
+    com.rapidphotoflow: DEBUG
+    org.springframework.web: INFO
+    org.hibernate: INFO
+
+cloudinary:
+  cloud_name: dcxothmph
+  api_key: 465111424697416
+  api_secret: czC6n8F-Ym_JrxYQZNR1_mIC330
+

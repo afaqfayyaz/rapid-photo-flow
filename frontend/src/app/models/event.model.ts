@@ -1,0 +1,19 @@
+export enum EventType {
+  PHOTO_UPLOADED = 'PHOTO_UPLOADED',
+  PHOTO_STATUS_CHANGED = 'PHOTO_STATUS_CHANGED',
+  PHOTO_PROCESSING_STARTED = 'PHOTO_PROCESSING_STARTED',
+  PHOTO_PROCESSING_COMPLETED = 'PHOTO_PROCESSING_COMPLETED',
+  PHOTO_PROCESSING_FAILED = 'PHOTO_PROCESSING_FAILED',
+  PHOTO_REVIEWED = 'PHOTO_REVIEWED',
+  PHOTO_DELETED = 'PHOTO_DELETED',
+}
+
+export interface PhotoEvent {
+  id: string;
+  photoId: string;
+  eventType: EventType;
+  message: string;
+  timestamp: string;
+  createdAt: string;
+}
+

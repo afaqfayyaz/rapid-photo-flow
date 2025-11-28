@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rapidphotodb_test
+      database: rapidphotodb_test
+      auto-index-creation: true
+
+logging:
+  level:
+    com.rapidphotoflow: INFO
+    org.springframework: WARN
+

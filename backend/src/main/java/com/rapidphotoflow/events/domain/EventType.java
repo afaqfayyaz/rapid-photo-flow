@@ -1,0 +1,12 @@
+package com.rapidphotoflow.events.domain;
+
+public enum EventType {
+    PHOTO_UPLOADED,
+    PHOTO_STATUS_CHANGED,
+    PHOTO_PROCESSING_STARTED,
+    PHOTO_PROCESSING_COMPLETED,
+    PHOTO_PROCESSING_FAILED,
+    PHOTO_REVIEWED,
+    PHOTO_DELETED
+}
+
